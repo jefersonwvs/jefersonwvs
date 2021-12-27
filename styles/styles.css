@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--bg-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .navbar-container {
@@ -74,7 +74,7 @@ main {
 }
 
 section {
-  border: 1px solid var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
   border-radius: 5px;
   margin: 10px 0px;
   padding: 20px;
@@ -84,11 +84,11 @@ section h2 {
   font-size: 1.5em;
 }
 
-.profile {
+#profile {
   text-align: center;
 }
 
-.profile img {
+#profile img {
   border-radius: 5px;
   padding: 5px;
   width: 210px;
@@ -97,18 +97,32 @@ section h2 {
 
 .profile-description {
   padding: 5px;
-}
-
-.profile-description code {
   font-family: "JetBrains Mono", monospace;
-  font-size: 1em;
-  font-weight: bold;
+  text-align: left;
 }
 
 .profile-description p {
   font-size: 1.5em;
 }
 
+.profile-description p strong {
+  font-size: 1em;
+}
+
 .skill {
-  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skill img {
+  width: 100px;
+}
+
+.skill-content {
+  padding-left: 10px;
+}
+
+.skill-content h3 {
+  font-size: 1.5em;
 }
